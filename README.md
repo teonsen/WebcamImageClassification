@@ -2,6 +2,8 @@
 A WinForms example of ML.NET image classification through webcam.
 You can experience preparing training data, generating models, and classifying images in real time with a webcam.
 
+![Image](appimage.png)
+
 # Requirements
 * Windows 10
 * .NET Core3.1
@@ -23,6 +25,6 @@ After the training is finished, the result will be displayed as an HTML file as 
 
 ## Step3. Consume model
 1. Push [InitCam] button in "3.Consume model" tab.
-1. Push [Start classify] button.
+1. Push [Start classify] button. You will see which label it was classified under and its score in real time. 
 
 
