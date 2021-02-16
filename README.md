@@ -18,6 +18,9 @@ You can experience preparing training data, generating models, and classifying i
 1. Just push [Genarate] button in "2.Generate model" tab.
 pipeline.zip and model.zip will be created in the data-set folder.
 
+After the training is finished, the result will be displayed as an HTML file as shown below.
+![Image](resultimage.png)
+
 ## Step3. Consume model
 1. Push [InitCam] button in "3.Consume model" tab.
 1. Push [Start classify] button.
