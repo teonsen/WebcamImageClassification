@@ -7,7 +7,7 @@ You can experience preparing training data, generating models, and classifying i
 # Requirements
 * Windows 10
 * .NET Core3.1
-* Webcam
+* A webcam(usbcam)
 
 # Usege
 ## Step1. Gathering data
