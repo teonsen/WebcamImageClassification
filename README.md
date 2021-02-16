@@ -11,20 +11,25 @@ You can experience preparing training data, generating models, and classifying i
 
 # Usege
 ## Step1. Gathering data
-1. Select a folder to save data-set.
-1. Enter a label for the image to be captured in the "Label name" field.
-1. Taking images as training data with a webcam.
-1. Repeat 2 and 3 for the number of labels you want to classify.
+1. Select [1.Create data-set] tab.
+1. Select a folder to save images as a data-set.
+1. Enter a label in the "Label name" textbox for the image to be captured.
+1. Specify the number of images to be taken and the interval between shots. 
+1. Press [Start] button to start capturing images for training using the Web camera.
+1. Repeat 3 to 5 for the number of labels you want to classify.
 
 ## Step2. Generate model
-1. Just push [Genarate] button in "2.Generate model" tab.
-pipeline.zip and model.zip will be created in the data-set folder.
-
-After the training is finished, the result will be displayed as an HTML file as shown below.
+1. Select [2.Generate model] tab.
+1. Make sure that the data-set folder you selected in Step1 is displayed in the text box. 
+1. Press [Genarate] button.
+After the training is finished, pipeline.zip and model.zip will be created in the data-set folder.
+Also, the result will be displayed as an HTML file as shown below.
 ![Image](resultimage.png)
 
 ## Step3. Consume model
-1. Push [InitCam] button in "3.Consume model" tab.
-1. Push [Start classify] button. You will see which label it was classified under and its score in real time. 
+1. Select [3.Consume model] tab.
+1. Make sure that the paths to pipeline.zip and model.zip are entered in the text boxes respectively.
+1. Press [InitCam] button to initialize the webcam.
+1. Press [Start classify] button. You will see which label it was classified under and its score in real time. 
 
 
