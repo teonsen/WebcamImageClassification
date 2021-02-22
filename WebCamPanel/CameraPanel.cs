@@ -8,11 +8,11 @@ using System.Windows.Forms;
 using OpenCvSharp;
 using OpenCvSharp.Internal;
 
-namespace WebcamImageClassification
+namespace WebCamPanel
 {
-    public partial class WebcamPanel : UserControl
+    public partial class CameraPanel : UserControl
     {
-        internal event EventHandler<CapturedInfo> Captured;
+        public event EventHandler<CapturedInfo> Captured;
         private const int WIDTH = 640;
         private const int HEIGHT = 480;
         private Mat _frame;
@@ -22,17 +22,17 @@ namespace WebcamImageClassification
         private bool _classifyMode = false;
         Panel _parentPanel;
 
-        public WebcamPanel(Panel parentPanel)
+        public CameraPanel(Panel parentPanel)
         {
             InitializeComponent();
             _parentPanel = parentPanel;
-            cboWebcams.SelectedIndex = 0;
+            cboCameraIndex.SelectedIndex = 0;
         }
 
         private void InitWebcam()
         {
             //カメラ画像取得用のVideoCapture作成
-            _video = new VideoCapture(cboWebcams.SelectedIndex);
+            _video = new VideoCapture(cboCameraIndex.SelectedIndex);
             if (!_video.IsOpened())
             {
                 MessageBox.Show("No camera is found!");
@@ -131,7 +131,7 @@ namespace WebcamImageClassification
 
         private string _savePath;
         private int _count;
-        internal void StartCapturing(string savePath, int captureInterval)
+        public void StartCapturing(string savePath, int captureInterval)
         {
             _classifyMode = false;
             _savePath = savePath;
@@ -140,7 +140,7 @@ namespace WebcamImageClassification
             timerCapture.Enabled = true;
         }
 
-        internal void ClearThis()
+        public void ClearThis()
         {
             timerCapture.Enabled = false;
             lblClassify.Text = "---";
@@ -153,7 +153,7 @@ namespace WebcamImageClassification
         }
 
         string _modelZip, _pipelineZip;
-        internal void StartClassifying(string modelPath, string pipelinePath)
+        public void StartClassifying(string modelPath, string pipelinePath)
         {
             _classifyMode = true;
             _modelZip = modelPath;
@@ -169,10 +169,11 @@ namespace WebcamImageClassification
             lblClassify.Text = "---";
         }
 
-        private void cboWebcams_SelectedIndexChanged(object sender, EventArgs e)
+        private void cboCameraIndex_SelectedIndexChanged(object sender, EventArgs e)
         {
             InitWebcam();
         }
+
     }
 
     public class CapturedInfo

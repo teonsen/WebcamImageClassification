@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="ImageClassification" Version="1.0.2" />
+    <PackageReference Include="ImageClassification" Version="1.5.4.1" />
     <PackageReference Include="OpenCvSharp4" Version="4.5.1.20210210" />
     <PackageReference Include="OpenCvSharp4.Windows" Version="4.5.1.20210210" />
   </ItemGroup>
@@ -29,6 +29,10 @@
 
   <ItemGroup>
     <Folder Include="Resources\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WebCamPanel\WebCamPanel.csproj" />
   </ItemGroup>
 
 </Project>

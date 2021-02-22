@@ -7,10 +7,10 @@ using System.Linq;
 using System.IO;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ImageClassification;
 using WebCamPanel;
+using ImageClassification;
 
-namespace WebcamImageClassification
+namespace WebCamImageClassificationNet472
 {
     public partial class Form1 : Form
     {
@@ -29,10 +29,10 @@ namespace WebcamImageClassification
 
         private void InitCam1()
         {
-            pan1.Controls.Clear();
-            _wp1 = new CameraPanel(pan1);
+            panel1.Controls.Clear();
+            _wp1 = new CameraPanel(panel1);
             _wp1.Dock = DockStyle.Fill;
-            pan1.Controls.Add(_wp1);
+            panel1.Controls.Add(_wp1);
         }
 
         private void btnSelectFolder_Click(object sender, EventArgs e)
@@ -155,17 +155,17 @@ namespace WebcamImageClassification
 
         private void InitCam3()
         {
-            pan3.Controls.Clear();
-            _wp3 = new CameraPanel(pan3);
+            panel3.Controls.Clear();
+            _wp3 = new CameraPanel(panel3);
             _wp3.Dock = DockStyle.Fill;
-            pan3.Controls.Add(_wp3);
+            panel3.Controls.Add(_wp3);
         }
 
         private void btnClassify_Click(object sender, EventArgs e)
         {
             if (File.Exists(txtModelPath.Text) && File.Exists(txtPipelinePath.Text))
             {
-                if (pan3.Controls.Count == 0)
+                if (panel3.Controls.Count == 0)
                 {
                     InitCam3();
                 }
