@@ -6,10 +6,11 @@ You can experience preparing training data, generating models, and classifying i
 
 # Requirements
 * Windows 10
+* VisualStudio 2019
 * .NET Core3.1
 * A webcam(usbcam)
 
-# Usege
+# Usage
 ## Step1. Gathering data
 1. Select [1.Create data-set] tab.
 1. Select a folder to save images as a data-set.
@@ -28,7 +29,7 @@ Also, the result will be displayed as an HTML file as shown below.
 
 ## Step3. Consume model
 1. Select [3.Consume model] tab.
-1. Make sure that the paths to pipeline.zip and model.zip are entered in the text boxes respectively.
+1. Make sure that the paths to pipeline.zip and model.zip are filled in the text boxes respectively.
 1. Press [InitCam] button to initialize the webcam.
 1. Press [Start classify] button. You will see which label it was classified under and its score in real time. 
 
