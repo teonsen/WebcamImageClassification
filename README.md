@@ -25,7 +25,7 @@ You can experience preparing training data, generating models, and classifying i
 1. Press [Genarate] button.
 After the training is finished, pipeline.zip and model.zip will be created in the data-set folder.
 Also, the result will be displayed as an HTML file as shown below.
-![Image](resultimage.png)
+![Image](result_sushi.png)
 
 ## Step3. Consume model
 1. Select [3.Consume model] tab.
