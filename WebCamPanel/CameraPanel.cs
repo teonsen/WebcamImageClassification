@@ -160,7 +160,7 @@ namespace WebCamPanel
             _modelZip = modelPath;
             _pipelineZip = pipelinePath;
             _savePath = Application.StartupPath + "webcam.jpg";
-            timerCapture.Interval = 1000;
+            timerCapture.Interval = 3000;
             timerCapture.Enabled = true;
         }
 

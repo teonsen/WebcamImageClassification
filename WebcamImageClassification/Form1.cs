@@ -139,6 +139,8 @@ namespace WebcamImageClassification
 
                 txtModelPath.Text = results.Resultfiles.ModelZip;
                 txtPipelinePath.Text = results.Resultfiles.PipelineZip;
+                // Save the results as HTML file.
+                results.SaveAsHTML();
                 // Show training result.
                 var p = new Process();
                 p.StartInfo = new ProcessStartInfo(results.Resultfiles.ResultHTML)

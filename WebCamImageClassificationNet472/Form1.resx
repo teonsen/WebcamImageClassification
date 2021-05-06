@@ -118,8 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 12</value>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 28</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>87, 12</value>
@@ -136,18 +136,12 @@
   <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="txtRootDataDir.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="&gt;&gt;label5.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>800, 700</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -209,9 +203,6 @@
   <data name="groupBox4.Text" xml:space="preserve">
     <value>Training progress</value>
   </data>
-  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>800, 700</value>
-  </data>
   <data name="&gt;&gt;txtTrainingProgress.Parent" xml:space="preserve">
     <value>groupBox4</value>
   </data>
@@ -234,11 +225,20 @@
   <data name="&gt;&gt;btnInitCam1.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 25</value>
+  <data name="&gt;&gt;txtDatasetDir.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>808, 726</value>
+  <data name="lblCapturedFilename.Text" xml:space="preserve">
+    <value>filename</value>
+  </data>
+  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="btnStart.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;btnInitCam3.Name" xml:space="preserve">
+    <value>btnInitCam3</value>
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -252,8 +252,8 @@
   <data name="&gt;&gt;txtPipelinePath.Name" xml:space="preserve">
     <value>txtPipelinePath</value>
   </data>
-  <data name="btnSelectFolder.Location" type="System.Drawing.Point, System.Drawing">
-    <value>742, 36</value>
+  <data name="txtDatasetDir.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Webcam Image Classification</value>
@@ -273,17 +273,14 @@
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
   <data name="groupBox2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
   <data name="&gt;&gt;btnStart.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btnInitCam3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>695, 96</value>
+  <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
+    <value>groupBox3</value>
   </data>
   <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -294,29 +291,29 @@
   <data name="&gt;&gt;txtLabelName.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
+  <data name="&gt;&gt;btnInitCam1.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
   <data name="label7.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="lblCapturedFilename.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>800, 700</value>
+  </data>
+  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="nudInterval.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 9.75pt</value>
   </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 12</value>
-  </data>
   <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
     <value>tabPage3</value>
   </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
     <value>groupBox1</value>
-  </data>
-  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>66, 12</value>
@@ -342,8 +339,14 @@
   <data name="tabControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
+  <data name="&gt;&gt;progressBar1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="label5.Text" xml:space="preserve">
     <value>data-set dir</value>
+  </data>
+  <data name="btnStart.Text" xml:space="preserve">
+    <value>Start</value>
   </data>
   <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
@@ -363,17 +366,17 @@
   <data name="&gt;&gt;lblCapturedFilename.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+  <data name="nudInterval.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Capture settings</value>
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="&gt;&gt;txtTrainingProgress.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="&gt;&gt;label5.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -390,12 +393,6 @@
   <data name="&gt;&gt;txtRootDataDir.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>Generate model</value>
-  </data>
-  <data name="&gt;&gt;btnStart.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
   <data name="&gt;&gt;btnGenerateModel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -404,6 +401,9 @@
   </data>
   <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
     <value>tabPage3</value>
+  </data>
+  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>808, 726</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -414,11 +414,14 @@
   <data name="&gt;&gt;label5.Name" xml:space="preserve">
     <value>label5</value>
   </data>
-  <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
-    <value>groupBox3</value>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 12</value>
   </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>Capture interval[ms]</value>
+  <data name="lblCapturedFilename.Location" type="System.Drawing.Point, System.Drawing">
+    <value>491, 82</value>
+  </data>
+  <data name="&gt;&gt;btnGenerateModel.Name" xml:space="preserve">
+    <value>btnGenerateModel</value>
   </data>
   <data name="&gt;&gt;txtModelPath.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -471,8 +474,8 @@
   <data name="txtTrainingProgress.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
     <value>Vertical</value>
   </data>
-  <data name="txtDatasetDir.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="btnSelectFolder.Size" type="System.Drawing.Size, System.Drawing">
     <value>32, 23</value>
@@ -495,15 +498,6 @@
   <data name="btnInitCam1.Location" type="System.Drawing.Point, System.Drawing">
     <value>692, 95</value>
   </data>
-  <data name="txtModelPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>661, 19</value>
-  </data>
-  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="btnInitCam1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>99, 23</value>
-  </data>
   <data name="btnStart.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 47</value>
   </data>
@@ -525,9 +519,6 @@
   <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
     <value>tabPage1</value>
   </data>
-  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
   <data name="&gt;&gt;nudCaptures.Type" xml:space="preserve">
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -546,6 +537,12 @@
   <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
   <data name="btnGenerateModel.Text" xml:space="preserve">
     <value>Generate</value>
   </data>
@@ -555,8 +552,8 @@
   <data name="txtLabelName.Size" type="System.Drawing.Size, System.Drawing">
     <value>109, 20</value>
   </data>
-  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="btnInitCam3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>695, 96</value>
   </data>
   <data name="nudCaptures.Location" type="System.Drawing.Point, System.Drawing">
     <value>306, 62</value>
@@ -564,8 +561,8 @@
   <data name="&gt;&gt;txtTrainingProgress.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="btnStart.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="&gt;&gt;btnStart.Parent" xml:space="preserve">
+    <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;btnClassify.Parent" xml:space="preserve">
     <value>groupBox3</value>
@@ -591,23 +588,23 @@
   <data name="nudInterval.Location" type="System.Drawing.Point, System.Drawing">
     <value>306, 89</value>
   </data>
-  <data name="&gt;&gt;txtRootDataDir.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
   <data name="btnInitCam1.Text" xml:space="preserve">
     <value>InitCam</value>
   </data>
   <data name="&gt;&gt;lblCapturedFilename.Name" xml:space="preserve">
     <value>lblCapturedFilename</value>
   </data>
-  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;label4.Name" xml:space="preserve">
     <value>label4</value>
   </data>
   <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
   </data>
   <data name="btnClassify.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -624,14 +621,14 @@
   <data name="&gt;&gt;txtModelPath.Parent" xml:space="preserve">
     <value>groupBox3</value>
   </data>
-  <data name="btnGenerateModel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 69</value>
-  </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="&gt;&gt;btnSelectFolder.Name" xml:space="preserve">
     <value>btnSelectFolder</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 12</value>
   </data>
   <data name="&gt;&gt;btnInitCam1.Name" xml:space="preserve">
     <value>btnInitCam1</value>
@@ -642,14 +639,8 @@
   <data name="&gt;&gt;txtLabelName.Name" xml:space="preserve">
     <value>txtLabelName</value>
   </data>
-  <data name="lblCapturedFilename.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="label6.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
-  </data>
-  <data name="txtTrainingProgress.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 15</value>
   </data>
   <data name="&gt;&gt;btnClassify.Name" xml:space="preserve">
     <value>btnClassify</value>
@@ -660,14 +651,20 @@
   <data name="&gt;&gt;txtPipelinePath.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;txtDatasetDir.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="btnSelectFolder.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;btnInitCam3.Name" xml:space="preserve">
-    <value>btnInitCam3</value>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;btnGenerateModel.Parent" xml:space="preserve">
+    <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;label6.Name" xml:space="preserve">
     <value>label6</value>
@@ -678,11 +675,8 @@
   <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnInitCam1.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;txtDatasetDir.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -693,20 +687,14 @@
   <data name="&gt;&gt;txtPipelinePath.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 124</value>
-  </data>
   <data name="&gt;&gt;label7.Parent" xml:space="preserve">
     <value>groupBox3</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
   </data>
   <data name="&gt;&gt;btnInitCam3.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -726,8 +714,8 @@
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
-    <value>tabControl1</value>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
   </data>
   <data name="btnGenerateModel.Size" type="System.Drawing.Size, System.Drawing">
     <value>94, 23</value>
@@ -747,8 +735,8 @@
   <data name="txtPipelinePath.Location" type="System.Drawing.Point, System.Drawing">
     <value>87, 25</value>
   </data>
-  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="nudCaptures.Size" type="System.Drawing.Size, System.Drawing">
     <value>56, 20</value>
@@ -759,14 +747,17 @@
   <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="btnClassify.Text" xml:space="preserve">
+    <value>Start classify</value>
+  </data>
   <data name="tabPage2.Text" xml:space="preserve">
     <value>2. Generate model</value>
   </data>
   <data name="&gt;&gt;tabPage3.Parent" xml:space="preserve">
     <value>tabControl1</value>
   </data>
-  <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 25</value>
   </data>
   <data name="txtRootDataDir.Location" type="System.Drawing.Point, System.Drawing">
     <value>10, 38</value>
@@ -777,8 +768,8 @@
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="lblCapturedFilename.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>275, 12</value>
@@ -792,9 +783,6 @@
   <data name="&gt;&gt;txtRootDataDir.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;nudInterval.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="progressBar1.Location" type="System.Drawing.Point, System.Drawing">
     <value>491, 66</value>
   </data>
@@ -804,8 +792,8 @@
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 12</value>
   </data>
-  <data name="lblCapturedFilename.Text" xml:space="preserve">
-    <value>filename</value>
+  <data name="txtModelPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>661, 19</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -825,23 +813,23 @@
   <data name="btnInitCam3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
+    <value>groupBox4</value>
   </data>
-  <data name="&gt;&gt;txtDatasetDir.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;progressBar1.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
+    <value>tabPage1</value>
   </data>
   <data name="btnSelectFolder.Text" xml:space="preserve">
     <value>...</value>
   </data>
-  <data name="&gt;&gt;btnGenerateModel.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 67</value>
   </data>
-  <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 12</value>
+  </data>
+  <data name="&gt;&gt;txtRootDataDir.Parent" xml:space="preserve">
+    <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label3.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -861,6 +849,9 @@
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
   </data>
+  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;txtLabelName.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -870,14 +861,17 @@
   <data name="&gt;&gt;panel1.Name" xml:space="preserve">
     <value>panel1</value>
   </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 67</value>
+  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>800, 700</value>
   </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Capture settings</value>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
-  <data name="&gt;&gt;btnStart.Name" xml:space="preserve">
-    <value>btnStart</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>808, 726</value>
+  </data>
+  <data name="lblCapturedFilename.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;progressBar1.Name" xml:space="preserve">
     <value>progressBar1</value>
@@ -888,14 +882,17 @@
   <data name="&gt;&gt;label7.Name" xml:space="preserve">
     <value>label7</value>
   </data>
+  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>794, 124</value>
   </data>
-  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 124</value>
   </data>
-  <data name="btnInitCam3.Text" xml:space="preserve">
-    <value>InitCam</value>
+  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
+    <value>tabControl1</value>
   </data>
   <data name="btnClassify.Location" type="System.Drawing.Point, System.Drawing">
     <value>87, 82</value>
@@ -912,26 +909,29 @@
   <data name="&gt;&gt;txtLabelName.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="nudInterval.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="&gt;&gt;txtModelPath.Name" xml:space="preserve">
+    <value>txtModelPath</value>
+  </data>
+  <data name="&gt;&gt;btnStart.Name" xml:space="preserve">
+    <value>btnStart</value>
   </data>
   <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="lblCapturedFilename.Location" type="System.Drawing.Point, System.Drawing">
-    <value>491, 82</value>
+  <data name="btnSelectFolder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>742, 36</value>
   </data>
-  <data name="btnStart.Text" xml:space="preserve">
-    <value>Start</value>
+  <data name="btnGenerateModel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 69</value>
   </data>
   <data name="&gt;&gt;txtDatasetDir.Parent" xml:space="preserve">
     <value>groupBox2</value>
   </data>
-  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>808, 726</value>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Generate model</value>
   </data>
-  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="nudInterval.Size" type="System.Drawing.Size, System.Drawing">
     <value>56, 20</value>
@@ -942,8 +942,8 @@
   <data name="txtLabelName.Location" type="System.Drawing.Point, System.Drawing">
     <value>77, 63</value>
   </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 12</value>
+  <data name="txtTrainingProgress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 15</value>
   </data>
   <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>794, 121</value>
@@ -954,32 +954,32 @@
   <data name="txtTrainingProgress.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="btnInitCam1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 23</value>
   </data>
-  <data name="&gt;&gt;txtModelPath.Name" xml:space="preserve">
-    <value>txtModelPath</value>
+  <data name="&gt;&gt;nudInterval.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;folderBrowserDialog1.Type" xml:space="preserve">
     <value>System.Windows.Forms.FolderBrowserDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 28</value>
+  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="btnClassify.Text" xml:space="preserve">
-    <value>Start classify</value>
+  <data name="btnInitCam3.Text" xml:space="preserve">
+    <value>InitCam</value>
   </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;btnGenerateModel.Name" xml:space="preserve">
-    <value>btnGenerateModel</value>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Capture interval[ms]</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>794, 570</value>
   </data>
-  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

@@ -537,8 +537,35 @@
   <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="label8.AutoSize" type="System.Boolean, System.Private.CoreLib">
+    <value>True</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing.Primitives">
+    <value>15, 25</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing.Primitives">
+    <value>65, 15</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, System.Private.CoreLib">
+    <value>5</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Data folder</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="btnGenerateModel.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>15, 61</value>
+    <value>15, 76</value>
   </data>
   <data name="btnGenerateModel.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>107, 23</value>
@@ -559,10 +586,10 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;btnGenerateModel.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="txtDatasetDir.Location" type="System.Drawing.Point, System.Drawing.Primitives">
-    <value>15, 32</value>
+    <value>15, 45</value>
   </data>
   <data name="txtDatasetDir.Size" type="System.Drawing.Size, System.Drawing.Primitives">
     <value>734, 23</value>
@@ -580,7 +607,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;txtDatasetDir.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="groupBox1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>

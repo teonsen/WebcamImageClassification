@@ -64,6 +64,7 @@ namespace WebcamImageClassification
             this.label6 = new System.Windows.Forms.Label();
             this.txtModelPath = new System.Windows.Forms.TextBox();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.label8 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.grpCaptureSettings.SuspendLayout();
@@ -256,6 +257,7 @@ namespace WebcamImageClassification
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.btnGenerateModel);
             this.groupBox1.Controls.Add(this.txtDatasetDir);
             resources.ApplyResources(this.groupBox1, "groupBox1");
@@ -333,6 +335,11 @@ namespace WebcamImageClassification
             resources.ApplyResources(this.txtModelPath, "txtModelPath");
             this.txtModelPath.Name = "txtModelPath";
             // 
+            // label8
+            // 
+            resources.ApplyResources(this.label8, "label8");
+            this.label8.Name = "label8";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
@@ -394,6 +401,7 @@ namespace WebcamImageClassification
         private System.Windows.Forms.Panel pan3;
         private System.Windows.Forms.Button btnInitCam1;
         private System.Windows.Forms.Button btnInitCam3;
+        private System.Windows.Forms.Label label8;
     }
 }
 

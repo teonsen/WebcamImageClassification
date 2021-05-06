@@ -182,8 +182,14 @@
   <data name="tabPage2.Text" xml:space="preserve">
     <value>2. 学習モデルの生成</value>
   </data>
+  <data name="btnInitCam3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 82</value>
+  </data>
   <data name="btnInitCam3.Text" xml:space="preserve">
     <value>カメラ初期化</value>
+  </data>
+  <data name="btnClassify.Location" type="System.Drawing.Point, System.Drawing">
+    <value>113, 82</value>
   </data>
   <data name="btnClassify.Size" type="System.Drawing.Size, System.Drawing">
     <value>171, 23</value>
