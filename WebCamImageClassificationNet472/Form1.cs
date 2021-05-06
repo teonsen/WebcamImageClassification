@@ -8,7 +8,9 @@ using System.IO;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WebCamPanel;
-using ImageClassification;
+//using ImageClassification;
+using ImageClassificationGPU;
+using ImageClassification.IO;
 
 namespace WebCamImageClassificationNet472
 {
@@ -133,13 +135,13 @@ namespace WebCamImageClassificationNet472
                 };
                 Cursor = Cursors.WaitCursor;
                 // Train and generate the model.
-                var resultFiles = Trainer.GenerateModel(txtDatasetDir.Text, hp);
+                var results = Trainer.GenerateModel(txtDatasetDir.Text, hp);
 
-                txtModelPath.Text = resultFiles.ModelSavedPath;
-                txtPipelinePath.Text = resultFiles.PipelineSavedPath;
+                txtModelPath.Text = results.Resultfiles.ModelZip;
+                txtPipelinePath.Text = results.Resultfiles.PipelineZip;
                 // Show training result.
                 var p = new Process();
-                p.StartInfo = new ProcessStartInfo(resultFiles.ResultHTMLSavedPath)
+                p.StartInfo = new ProcessStartInfo(results.Resultfiles.ResultHTML)
                 {
                     UseShellExecute = true
                 };

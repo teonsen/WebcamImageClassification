@@ -7,12 +7,17 @@ using System.IO;
 using System.Windows.Forms;
 using OpenCvSharp;
 using OpenCvSharp.Internal;
+//using ImageClassification;
+using ImageClassificationGPU;
+using Microsoft.ML;
+using Microsoft.ML.Data;
 
 namespace WebCamPanel
 {
     public partial class CameraPanel : UserControl
     {
         public event EventHandler<CapturedInfo> Captured;
+        private event EventHandler<ImageClassification.IO.ImageResult> Classified;
         private const int WIDTH = 640;
         private const int HEIGHT = 480;
         private Mat _frame;
@@ -31,6 +36,7 @@ namespace WebCamPanel
 
         private void InitWebcam()
         {
+
             //カメラ画像取得用のVideoCapture作成
             _video = new VideoCapture(cboCameraIndex.SelectedIndex);
             if (!_video.IsOpened())
@@ -87,21 +93,15 @@ namespace WebCamPanel
 
             if (_classifyMode)
             {
-                Cursor = Cursors.WaitCursor;
-                // predict the webcam image.
-                var predictionResult = ImageClassification.Predictor.ClassifySingleImage(_pipelineZip, _modelZip, path);
-                // overray
-                //_frame.PutText($"{predictionResult.PredictedLabel} {predictionResult.Score:P}", new OpenCvSharp.Point(10, 10), HersheyFonts.HersheyPlain, 10, new Scalar(0), 2);
-                lblClassify.Text = $"{predictionResult.PredictedLabel} {predictionResult.Score:P}";
-                if (predictionResult.Score >= 0.9f)
+                System.Threading.Tasks.Task.Run(() =>
                 {
-                    lblClassify.ForeColor = Color.Red;
-                }
-                else
-                {
-                    lblClassify.ForeColor = Color.Black;
-                }
-                Cursor = Cursors.Default;
+                    // predict the webcam image.
+                    MLContext mlContext = new MLContext(seed: 1);
+                    var predictionResult = Classifier.GetSingleImagePrediction(mlContext, ImageClassification.IO.DataLoader.GetPipeline(mlContext, _pipelineZip), ImageClassification.IO.DataLoader.GetModel(mlContext, _modelZip), _savePath);
+                    Classified?.Invoke(this, predictionResult);
+                    // overray
+                    //_frame.PutText($"{predictionResult.PredictedLabel} {predictionResult.Score:P}", new OpenCvSharp.Point(10, 10), HersheyFonts.HersheyPlain, 10, new Scalar(0), 2);
+                });
             }
             _count++;
             Captured?.Invoke(this, new CapturedInfo(_count, path));
@@ -155,12 +155,26 @@ namespace WebCamPanel
         string _modelZip, _pipelineZip;
         public void StartClassifying(string modelPath, string pipelinePath)
         {
+            Classified += CameraPanel_Classified;
             _classifyMode = true;
             _modelZip = modelPath;
             _pipelineZip = pipelinePath;
             _savePath = Application.StartupPath + "webcam.jpg";
-            timerCapture.Interval = 3000;
+            timerCapture.Interval = 1000;
             timerCapture.Enabled = true;
+        }
+
+        private void CameraPanel_Classified(object sender, ImageClassification.IO.ImageResult e)
+        {
+            lblClassify.Text = $"{e.PredictedLabel} {e.HighScore:P}";
+            if (e.HighScore >= 0.9f)
+            {
+                lblClassify.ForeColor = Color.Red;
+            }
+            else
+            {
+                lblClassify.ForeColor = Color.Black;
+            }
         }
 
         private void btnStop_Click(object sender, EventArgs e)
