@@ -2,15 +2,15 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="ImageClassification" Version="1.5.5.3" />
-    <PackageReference Include="ImageClassificationGPU" Version="1.5.5.3" />
-    <PackageReference Include="OpenCvSharp4" Version="4.5.1.20210210" />
-    <PackageReference Include="OpenCvSharp4.Windows" Version="4.5.1.20210210" />
+    <PackageReference Include="ImageClassification" Version="2.0.0.1" />
+    <PackageReference Include="ImageClassificationGPU" Version="2.0.0" />
+    <PackageReference Include="OpenCvSharp4" Version="4.6.0.20220608" />
+    <PackageReference Include="OpenCvSharp4.Windows" Version="4.6.0.20220608" />
   </ItemGroup>
 
   <ItemGroup>

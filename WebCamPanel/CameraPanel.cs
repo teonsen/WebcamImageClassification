@@ -41,7 +41,7 @@ namespace WebCamPanel
             _video = new VideoCapture(cboCameraIndex.SelectedIndex);
             if (!_video.IsOpened())
             {
-                MessageBox.Show("No camera is found!");
+                MessageBox.Show("No camera is found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 return;
             }
             _video.FrameWidth = WIDTH;
